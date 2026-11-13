@@ -1,0 +1,7 @@
+IN n
+# 判断奇偶数：能被2整除就是偶数
+IF n mod 2 = 0
+  OUT n + " 是偶数"
+ELSE
+  OUT n + " 是奇数"
+ENDIF
