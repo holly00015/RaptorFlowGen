@@ -1,0 +1,9 @@
+IN n
+# 求 1+2+...+n ；Raptor 循环是“直到条件成立”，故条件写 i > n
+SET s := 0
+SET i := 1
+LOOP i > n
+  SET s := s + i
+  SET i := i + 1
+ENDLOOP
+OUT "1 到 " + n + " 的和 = " + s
