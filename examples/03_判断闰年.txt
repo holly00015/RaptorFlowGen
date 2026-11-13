@@ -1,0 +1,15 @@
+IN y
+# 闰年：能被4整除且不能被100整除，或能被400整除（用嵌套选择避免复杂条件）
+IF y mod 4 = 0
+  IF y mod 100 = 0
+    IF y mod 400 = 0
+      OUT y + " 是闰年"
+    ELSE
+      OUT y + " 不是闰年"
+    ENDIF
+  ELSE
+    OUT y + " 是闰年"
+  ENDIF
+ELSE
+  OUT y + " 不是闰年"
+ENDIF
