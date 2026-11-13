@@ -1,0 +1,9 @@
+IN n
+# 求 n! = 1*2*...*n
+SET p := 1
+SET i := 1
+LOOP i > n
+  SET p := p * i
+  SET i := i + 1
+ENDLOOP
+OUT n + "! = " + p
