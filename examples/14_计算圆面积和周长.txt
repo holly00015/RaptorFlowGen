@@ -1,0 +1,8 @@
+IN r
+# 计算圆的面积和周长（变量名不用 pi，避免与内置常量冲突）
+SET pv := 3.14159
+SET area := pv * r * r
+SET cir := 2 * pv * r
+OUT "半径 = " + r
+OUT "面积 = " + area
+OUT "周长 = " + cir
