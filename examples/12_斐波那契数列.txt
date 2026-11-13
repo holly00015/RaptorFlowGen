@@ -1,0 +1,12 @@
+IN n
+# 输出斐波那契数列的前 n 项
+SET a := 1
+SET b := 1
+SET i := 1
+LOOP i > n
+  OUT a
+  SET t := a + b
+  SET a := b
+  SET b := t
+  SET i := i + 1
+ENDLOOP
