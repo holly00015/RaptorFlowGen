@@ -1,0 +1,19 @@
+IN n
+# 判断素数：用 2 到 sqrt(n) 依次试除
+SET flag := 1
+IF n <= 1
+  SET flag := 0
+ELSE
+  SET k := 2
+  LOOP k * k > n
+    IF n mod k = 0
+      SET flag := 0
+    ENDIF
+    SET k := k + 1
+  ENDLOOP
+ENDIF
+IF flag = 1
+  OUT n + " 是素数"
+ELSE
+  OUT n + " 不是素数"
+ENDIF
