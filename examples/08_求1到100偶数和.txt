@@ -1,0 +1,8 @@
+# 求 1~100 之间所有偶数的和
+SET s := 0
+SET i := 2
+LOOP i > 100
+  SET s := s + i
+  SET i := i + 2
+ENDLOOP
+OUT "1~100 之间偶数的和 = " + s
