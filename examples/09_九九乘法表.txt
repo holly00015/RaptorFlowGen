@@ -1,0 +1,12 @@
+# 九九乘法表：外层控制行，内层控制列
+SET i := 1
+LOOP i > 9
+  SET j := 1
+  SET line := ""
+  LOOP j > i
+    SET line := line + j + "*" + i + "=" + j * i + "  "
+    SET j := j + 1
+  ENDLOOP
+  OUT line
+  SET i := i + 1
+ENDLOOP
