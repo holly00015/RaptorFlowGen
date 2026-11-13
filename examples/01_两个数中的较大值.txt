@@ -1,0 +1,8 @@
+IN a
+IN b
+# 比较两个数，输出较大值
+IF a > b
+  OUT "较大值 = " + a
+ELSE
+  OUT "较大值 = " + b
+ENDIF
