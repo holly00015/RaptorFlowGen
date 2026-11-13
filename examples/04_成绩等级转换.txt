@@ -1,0 +1,23 @@
+IN s
+# 成绩合理性检查，再把百分制转换为五级等级
+IF s < 0 or s > 100
+  OUT "成绩不合理"
+ELSE
+  IF s >= 90
+    OUT s + " 分，等级 A"
+  ELSE
+    IF s >= 80
+      OUT s + " 分，等级 B"
+    ELSE
+      IF s >= 70
+        OUT s + " 分，等级 C"
+      ELSE
+        IF s >= 60
+          OUT s + " 分，等级 D"
+        ELSE
+          OUT s + " 分，等级 E"
+        ENDIF
+      ENDIF
+    ENDIF
+  ENDIF
+ENDIF
