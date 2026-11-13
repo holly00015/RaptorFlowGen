@@ -1,0 +1,12 @@
+IN a
+IN b
+IN c
+# 先假设 a 最大，再依次和 b、c 比较（变量名不用 max，避免与内置函数冲突）
+SET mx := a
+IF b > mx
+  SET mx := b
+ENDIF
+IF c > mx
+  SET mx := c
+ENDIF
+OUT "最大值 = " + mx
