@@ -1,0 +1,5 @@
+﻿*.exe
+*.pdb
+out/
+obj/
+raptor.dir
