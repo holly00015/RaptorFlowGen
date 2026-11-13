@@ -21,6 +21,18 @@ RaptorFlowGen.exe --raptor "C:\Raptor" --spec sum.txt --out sum.rap
 
 ---
 
+## 下载
+
+不想自己编译的话，直接到 **[Releases](https://github.com/holly00015/RaptorFlowGen/releases)** 下载 `RaptorFlowGen.exe`（Windows，需要 .NET Framework 4.x，且本机已安装 Raptor 4.0.5.x）。
+
+下载后用法：
+
+```bat
+RaptorFlowGen.exe --raptor "<Raptor安装目录>" --spec examples\06_求1到n的和.txt --out out.rap
+```
+
+> 附件 SHA256：`3C42396870FB1A963C3BAC41925E37BE2703DDA89BE1665A984B7E639AF3C11E`
+
 ## 重要声明（请先读）
 
 1. **本仓库不包含 Raptor。** Raptor 是 Martin C. Carlisle 开发的流程图教学软件，版权归其作者所有；中文汉化版由第三方翻译。本工具**只包含自己的代码**，运行时需要用户自行安装 Raptor，并把它指向安装目录。
