@@ -1,0 +1,21 @@
+IN a
+IN b
+IN c
+# 先判断能否构成三角形，再判断形状
+IF a <= 0 or b <= 0 or c <= 0
+  OUT "边长必须为正数"
+ELSE
+  IF a + b > c and a + c > b and b + c > a
+    IF a = b and b = c
+      OUT "等边三角形"
+    ELSE
+      IF a = b or b = c or a = c
+        OUT "等腰三角形"
+      ELSE
+        OUT "不等边三角形"
+      ENDIF
+    ENDIF
+  ELSE
+    OUT "不能构成三角形"
+  ENDIF
+ENDIF
