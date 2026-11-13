@@ -1,0 +1,9 @@
+IN a
+IN b
+# 辗转相除法求最大公约数
+LOOP b = 0
+  SET t := a mod b
+  SET a := b
+  SET b := t
+ENDLOOP
+OUT "最大公约数 = " + a
